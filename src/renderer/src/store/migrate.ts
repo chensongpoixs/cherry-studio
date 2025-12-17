@@ -3032,6 +3032,7 @@ const migrateConfig = {
           provider.type = 'ollama'
         }
       })
+      addProvider(state, 'mimo')
       logger.info('migrate 186 success')
       return state
     } catch (error) {
